@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>বেতাগী</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	</head>
+	<body onload="onLoad()">
+	
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-tap-toggle="false" data-position="fixed" 
+			style="text-align:center;">
+			<a href="index.html" class="ui-btn ui-icon-grid ui-btn-icon-left ui-btn-icon-notext">Home</a>
+				<img style="margin-top:8px;" src="img/header.png"/>
+			<a href="about.html" class="ui-btn ui-icon-info ui-btn-icon-left ui-btn-icon-notext">Information</a>	
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<div class="ui-bar ui-bar-b" style="text-align:center;">
+					<p>উপজেলা প্রশাসন</p>
+				</div>
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>পূর্বতন উপজেলা নির্বাহী অফিসারগণ</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">				
+					
+						<p style=text-align:left;>
+						<strong>জনাব মোঃ সিরাজুল ইসলাম</strong><br> কার্যকাল: ০৬-০৯-৮৩ হতে<br> ০৭-০৪-৮৭ পর্যন্ত<br><br>
+						<strong>জনাব ডি কে হায়দার</strong><br> কার্যকাল: ০৫-০৪-৮৭ হতে<br>০৯-০৯-৯০ পর্যন্ত<br><br>
+						<strong>জনাব মুহাম্মদ শমসুল আলম </strong><br> কার্যকাল: ০৯-০৯-৯০ হতে<br>০৯-০১-৯১ পর্যন্ত<br><br>
+						<strong>জনাব এ কে এম খালেকুজ্জামান </strong><br> কার্যকাল: ০৯-০১-৯১ হতে<br>১১-০৩-৯২  পর্যন্ত<br><br>
+						<strong>জনাব  মুহাম্মদ শামচুল আলম </strong><br> কার্যকাল: ১১-০৩-৯২ হতে<br>১১-০৫-৯২ পর্যন্ত<br><br>
+						<strong>জনাব মোঃ শহজাহান মিয়া </strong><br> কার্যকাল: ২৩-০৪-৯২ হতে<br>৩০-০৮-৯৫ পর্যন্ত<br><br>
+						<strong>জনাব এ কে এম সাজ্জাদ হোসেন </strong><br> কার্যকাল: ২৮-০৮-৯৫ হতে<br>২৮-০৯-৯৬ পর্যন্ত<br><br>
+						<strong>জনাব নীতিশ চন্দ্র সরকার </strong><br> কার্যকাল: ২৮-০৯-৯৬ হতে<br>১১-১০-৯৬ পর্যন্ত<br><br>
+						<strong>জনাব মোঃ কামাল রেজা</strong><br> কার্যকাল: ১২-১০-৯৬ হতে<br>০৩-০১-৯৯ পর্যন্ত<br><br>
+						<strong>জনাব মোঃ রফিকুল আলম</strong><br> কার্যকাল: ২৮-১২-৯৮ হতে<br>১৪-১১-৯৯ পর্যন্ত<br><br>
+						<strong>জনাব  আব্দুল ওহাব খান </strong><br> কার্যকাল: ০২-০১-৯৯হতে<br>০৯-০৮-০১ পর্যন্ত<br><br>
+						<strong>জনাব মোঃ জামাল হোসেন মজুমদার </strong><br> কার্যকাল: ১৩-০৮-০১হতে<br>০৫-০১-০২ পর্যন্ত<br><br>
+						<strong>জনাব মোঃ মনিরুজ্জামান খান </strong><br> কার্যকাল: ০৬-০১-০২হতে<br>০২-০৩-০২ পর্যন্ত<br><br>
+						<strong>জনাব প্রনব কুমার ঘোষ </strong><br> কার্যকাল: ০২-০৩-০২ হতে<br>১৬-০৬-০৪ পর্যন্ত<br><br>
+						<strong>জনাব আনোয়ার হোসেন হাওলাদার</strong><br> কার্যকাল: ১৭-০৬-০৪হতে<br>০৬-০৯-০৪ পর্যন্ত<br><br>
+						<strong>জনাব সরদার সরাফত আলী</strong><br> কার্যকাল: ০৭-০৯-০৪ হতে<br>২৭-১১-০৬ পর্যন্ত<br><br>
+						<strong>জনাব মোঃ হোসেন আলী খন্দকার </strong><br> কার্যকাল: ২৯-১১-০৬ হতে<br>২৮-০৮-০৮ পর্যন্ত<br><br>
+						<strong>জনাব ডাঃ এ এম পারভেজ রহিম </strong><br> কার্যকাল: ৩১-০৮-০৮ হতে<br>২৬-০৭-০৯ পর্যন্ত<br><br>
+						<strong>জনাব মোঃ ফিরোজ আলম</strong><br> কার্যকাল: ২৬-০৭-০৯হতে<br>২২-০২-১১ পর্যন্ত<br><br>
+						<strong>জনাব কাজী মোহাম্মদ চাহেল তস্তরী </strong><br> কার্যকাল: ২২-০২-১১ হতে<br>১৬-০৩-১১ পর্যন্ত<br><br>
+						<strong>জনাব  মোহাম্মদ হাবীবুর রহমান </strong><br> কার্যকাল: ১৬-০৩-১১হতে<br>১৭-০৭-১২ পর্যন্ত<br><br>
+						<strong>জনাব মোঃ মনির হোসেন হাওলাদার</strong><br> কার্যকাল: ১৭-০৭-১২হতে<br>২০-০১-২০১৫</p>
+				 	</div>
+				</div>
+				
+				
+				
+			</div>
+			<div data-role="footer" data-tap-toggle="true" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-top" rel="external"></a></li> 
+						 <li><a onclick="window.history.back()" href="#" data-icon="back"></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

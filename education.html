@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>বেতাগী</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	</head>
+	<body onload="onLoad()">
+	
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-tap-toggle="false" data-position="fixed" 
+			style="text-align:center;">
+			<a href="index.html" class="ui-btn ui-icon-grid ui-btn-icon-left ui-btn-icon-notext">Home</a>
+				<img style="margin-top:8px;" src="img/header.png"/>
+			<a href="about.html" class="ui-btn ui-icon-info ui-btn-icon-left ui-btn-icon-notext">Information</a>	
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<div class="ui-bar ui-bar-b" style="text-align:center;">
+					<p>শিক্ষা প্রতিষ্ঠান</p>
+				</div>
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>কলেজ</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:justify;>১। ডাঃ আছমত আলী কলেজ, হোসনাবাদ, হোসনাবাদ ইউনিয়ন <br>
+	
+													২। চান্দখালী মোশাররফ হোসেন ডিগ্রী কলেজ, 	কাজীরাবাদ ইউনিয়ন ।
+																						</p>
+						
+				 	</div>
+				</div>
+				
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>উচ্চ মাধ্যমিক বিদ্যালয়</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:justify;> ১।  বি, এল, বি মাধ্যমিক বিদ্যালয়,বেতাগী ইউনিয়ন ।<br>
+
+২। হোসনাবাদ আদশৃ মাধ্যমিক বিদ্যালয়,  হোসনাবাদ ইউনিয়ন <br>
+
+৩। ছোপখালী মাধ্যমিক বিদ্যালয়,  হোসনাবাদ ইউনিয়ন <br>
+
+৪। মোকামিয়া মাধ্যমিক বিদ্যালয়, মোকামিয়া ইউনিয়ন <br>
+
+৫।কাইয়ালঘাটা মাধ্যমিক বিদ্যালয়, মোকামিয়া ইউনিয়ন 
+</p>
+						
+				 	</div>
+				</div>
+				
+				
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>দাখিল মাদ্রাসা</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:justify;> ১। কাজিরাবাদ ইসলামিয়া দাখিল মাদ্রাসা, কাজীরাবাদ ইউনিয়ন <br>
+
+২। চান্দখালী শরাফাতিয়া দাখিল মাদ্রাসা, কাজীরাবাদ ইউনিয়ন <br>
+
+৩। দক্ষিন বেতাগী নাদেরিয়া দাখিল মাদ্রাসা, বেতাগী ইউনিয়ন </p>
+						
+				 	</div>
+				</div>
+				
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>ফাজিল মাদ্রাসা</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:justify;>১। ছোপখালী জহুর উদ্দিন ফাজিল মদ্রাসা, হোসনাবাদ ইউনিয়ন 
+
+</p>
+						
+				 	</div>
+				</div>
+				
+		<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>প্রাথমিক বিদ্যালয়</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:justify;>১। মাছুয়াখালী সরকারী প্রাথমিক বিদ্যালয়<br>
+২।  দঃ চরখালী রেজিঃ প্রাঃ বিদ্যালয়<br>
+৩। পূব কাজিরাবাদ সঃ প্রাঃ বিদ্যালয়<br>
+৪। গড়িয়াবুনিয়া-ফুলতলা সরকারী প্রাথমিক বিদ্যালয়<br>
+৫। উত্তর বিবিচিনি সরকারী প্রাথমিক বিদ্যালয়<br>
+৬। পুটিয়াখালী সরকারী প্রাথমিক বিদ্যালয় <br>
+৭।উত্তর দেশান্তারকাঠী সরকারী প্রাথমিক বিদ্যালয়<br>
+৮।  দেশান্তরকাঠী সরকারী প্রাথমিক বিদ্যালয়<br>
+৯। পূর্ব ফুলতলা রেজিঃ প্রাথমিক বিদ্যালয়<br>
+১০।পশ্চিম বিবিচিনি রেজিঃ প্রাথমিক বিদ্যালয়<br>
+১১। পূর্ব দেশান্তরকাঠী রেজিঃ প্রাথমিক বিদ্যালয়<br>
+১২। দক্ষিন ভোলনাথপুর সরকারী প্রাথমিক বিদ্যালয়<br>
+১৩। দক্ষিন রানীপুর সরকারী প্রাথমিক বিদ্যালয়<br>
+১৪। পূব রানীপুর সরকারী প্রাথমিক বিদ্যালয়<br>
+১৫। ঝিলবুনিয়া রেজিঃ প্রাথমিক বিদ্যালয়<br>
+১৬। উত্তর ঝোপখালী সরকারী প্রাথমিক বিদ্যালয়					</p>
+						
+				 	</div>
+				</div>		
+				
+			</div>
+			<div data-role="footer" data-tap-toggle="true" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-top" rel="external"></a></li> 
+						 <li><a onclick="window.history.back()" href="#" data-icon="back"></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

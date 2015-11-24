@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>বেতাগী</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+		<link href="jquery/app.css" rel="stylesheet" type="text/css">
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	</head>
+	<body onload="onLoad()">
+	
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-tap-toggle="false" data-position="fixed" 
+			style="text-align:center;">
+			<a href="index.html" class="ui-btn ui-icon-grid ui-btn-icon-left ui-btn-icon-notext">Home</a>
+				<img style="margin-top:8px;" src="img/header.png"/>
+			<a href="about.html" class="ui-btn ui-icon-info ui-btn-icon-left ui-btn-icon-notext">Information</a>	
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<div class="ui-bar ui-bar-b" style="text-align:center;">
+					<p>মন্দির</p>
+				</div>
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>বেতাগী উপজেলার মন্দির সমূহ</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:left;> ১।  ছোপখালী (নাপিত খালী) শ্রী শ্রী দূর্গা মন্দির<br>
+
+২। দঃ হোসনাবাদ জলিসা বাজারে শ্রী শ্রী দূর্গা মন্দির<br>
+
+৩। মধ্য দক্ষিণ হোসনাবাদ রেজিঃ প্রাঃ বিঃ সংলগ্ন শ্রী শ্রী দূর্গা মন্দির<br>
+
+৪। নাপিত খালী হরেন্দ্র নাথ শীলের বাড়ী দূর্গা মন্দির<br>
+
+৫। উত্তর ছোপখালী লক্ষ্মী ডাক্তার বাড়ী শ্রী শ্রী দূর্গা মন্দির<br>
+
+৬।  হোসনাবাদ সতিশ চন্দ্র ঢালী বাড়ী মন্দির<br>
+
+৭।  দঃ বাসন্ডা ভবরঞ্জন শীলের বাড়ী মন্দির<br>
+
+৮।  দঃ হোসনাবাদ দুলাল চন্দ্র হাওলাদার বাড়ী মন্দির<br>
+
+৯। উত্তর করুনা নারায়ন মল্লিক বাড়ী আশ্রম<br>
+
+১০। ছোপখালী বাধঘাট বাজারে সার্ব্বজনীন মন্দির <br>
+১১। ছোপখালী সত্যরঞ্জন সিকদার বাড়ী সার্ব্ব জনীন দূর্গা মন্দির<br>
+১২।  দঃ হোসনাবাদ রমনী মোহন সিকদার বাড়ী আশ্রম<br>
+১৩।  হোসনাবাদ ২নং ওয়ার্ডে মালাকার বাড়ী মন্দির<br>
+১৪। হোসনাবাদ দিনেশ শীলের বাড়ী মন্দির
+
+ </p>
+						
+				 	</div>
+				</div>
+				
+				
+				
+				<div class="ui-corner-all custom-corners">
+				
+				
+				
+			</div>
+			<div data-role="footer" data-tap-toggle="true" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-top" rel="external"></a></li> 
+						 <li><a onclick="window.history.back()" href="#" data-icon="back"></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

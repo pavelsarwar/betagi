@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>বেতাগী</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	</head>
+	<body onload="onLoad()">
+	
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-tap-toggle="false" data-position="fixed" 
+			style="text-align:center;">
+			<a href="index.html" class="ui-btn ui-icon-grid ui-btn-icon-left ui-btn-icon-notext">Home</a>
+				<img style="margin-top:8px;" src="img/header.png"/>
+			<a href="about.html" class="ui-btn ui-icon-info ui-btn-icon-left ui-btn-icon-notext">Information</a>	
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<div class="ui-bar ui-bar-b" style="text-align:center;">
+					<p>এক নজরে বেতাগী</p>
+				</div>
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>প্রশাসনিক ইতিহাস</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:justify;> এ জনপদে থানা প্রতিষ্ঠিত হয় ১৯২০ খ্রিস্টাব্দে এবং উপজেলা প্রতিষ্ঠিত হয় ১৯৮৩ খ্রিস্টাব্দে। পূর্বে এ উপজেলাটি ছিল 
+পটুয়াখালী জেলার অর্ন্তগত।<br><br> তখন বরগুনা ছিল মহকুমা। পরবর্তিতে বরগুনা জেলায় উন্নীত হলে বেতাগী উপজেলাটি 
+বরগুনা জেলার অর্ন্তভুক্ত হয়।</p>
+						
+				 	</div>
+				</div>
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>উপজেলার আয়তন</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:justify;>১৬৭.৭৫ বর্গ কিঃমিঃ বা ৬৪.৭৬ বর্গ মাইল</p>
+				 	 </div>
+				</div>
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>সীমানা</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:justify;>দক্ষিনে-বরগুনা সদর উপজেলা, পূর্বে মির্জাগঞ্জ উপজেলা, উত্তরে বাকেরগঞ্জ উপজেলা ও পশ্চিমে কাঠালিয়া উপজেলা
+
+					</p>
+				 	 </div>
+				</div>
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>নদ-নদী</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:justify;> এই উপজেলা বেশ কয়েক টি ছোট খাটো নদ নালা দ্বারা বেষ্টিত, এ উপজেলার উল্লেখযোগ্য নদী মধ্যে হচ্ছেঃ  বিষখালী , ঝোপখালী,</p>
+				 	 </div>
+				</div>
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>জনসংখ্যা</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:justify;>পুরুষ-৫৮,৯১৪ <br><br>
+						মহিলা-৬২,৮৩৭<br><br>
+						মোট-১,২১,৭৫১</p>
+				 	 </div>
+				</div>
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>মোটভোটার সংখ্যা</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p>পুরুষ- ৩৮২১৩ <br><br>
+						মহিলা- ৪০৫৬৬ <br><br>
+						মোট ভোটার সংখ্যা- ৭৮৭৭৯</p>
+				 	 </div>
+				</div>
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>গ্রাম</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p> ৭৩ টি।</p>
+				 	 </div>
+				</div>
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>মৌজা</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p>৫৯ টি।</p>
+				 	 </div>
+				</div>
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>ইউনিয়ন</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p>০৭ টি</p>
+				 	 </div>
+				</div>
+			
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>পৌরসভা</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:justify;>পৌরসভার নাম  : বেতাগী পৌরসভা </p>
+				 	 </div>
+				</div>
+				
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>দর্শনীয় স্থান</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:justify;>বিবিচিনি শাহী মসজিদ </p>
+				 	 </div>
+				</div>
+				
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>মানচিত্রে উপজেলা</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<img style="max-width: 100%;" src="img/Betagi_Upazila.gif"/>
+				 	 </div>
+				</div>
+				
+				
+			</div>
+			<div data-role="footer" data-tap-toggle="true" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-top" rel="external"></a></li> 
+						 <li><a onclick="window.history.back()" href="#" data-icon="back"></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

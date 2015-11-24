@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>বেতাগী</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	</head>
+	<body onload="onLoad()">
+	
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-tap-toggle="false" data-position="fixed" 
+			style="text-align:center;">
+			<a href="index.html" class="ui-btn ui-icon-grid ui-btn-icon-left ui-btn-icon-notext">Home</a>
+				<img style="margin-top:8px;" src="img/header.png"/>
+			<a href="about.html" class="ui-btn ui-icon-info ui-btn-icon-left ui-btn-icon-notext">Information</a>	
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<div class="ui-bar ui-bar-b" style="text-align:center;">
+					<p>মোকামিয়া মাজার শরীফ</p>
+				</div>
+				
+	
+				<div class="ui-corner-all custom-corners">
+					
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:center;><img style="max-width: 100%;" src="img/mokamia.png"/></p>
+						
+				 	</div>
+				</div>
+				
+				
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>বিস্তারিত</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:justify;> উপমহাদেশের অন্যতম শ্রেষ্ঠ আধ্যাতিড়বক প্রান কেন্দ্র মোকামিয়া দরবার শরীফ এবং শ্রেষ্ঠ ইসলামী শিক্ষার পাদপীঠ করুনা
+মোকামিয়া কামিল (এম এ )মাদ্রাসা। এমন এক মহা পুরুষের সৃতি বিজড়িত যিনি ছিলেন অলিকুল শিরোমনি, মোর্শেদ
+কামেল ও দক্ষিন বাংলার সকল স্তরের জনসাধারনের নয়নমনি মোকামিয়া দরবার শরিফের মরহুম পীর সাহেব শাহ সূফী
+আলহাজ্ব হযরত মাওলানা হাছান উদ্দিন(রহঃ) তিনি ক্বাবার গিলাফ ধরে আলাহ তালার প্রেমে কানড়বার ¯্রােতধারায় গোটা
+আরব বাসীকে তাকলাগিয়ে পরিচিতি অর্জন করেছিলেন বাংলার হাছান বলে। আরববাসী আজও যার পরিচয় খোজ করে ।<br><br>
+জন্ম থেকে মৃত্যু পর্যন্ত তার জীবন রাসুলেপাক (সাঃ) এর পবিত্র আদর্শের অনুসারী কৈশরে ইয়াতিম হিসেবে দারিদ্রের
+যাতাকলে হয়ে অনেক দুঃখ কষ্ট সহ্য করেছেন রাসুলেপাক (সাঃ) এ আদর্শের অনুস্মরনে বাংলার এই নিবিড় বন জঙ্গলই
+ছিল তার কাছে রাসুলে পাকের হেরা সাদৃশ্যধ্যানাগার তারই এক কোনে তিন আধ্যাতিড়বকধ্যান সাগরের অতল তলে ডুবে
+থাকতেন তখনকার উপনিবেশিক শাসনামলে মুসলিম সমাজ স্বকীয় বৈশিষ্ট্য ও শিক্ষা সংস্কৃতি হারিয়ে পৌছেছিল
+দুর্গতিরচরম সীমায় ছিলনা দ্বীনি শিক্ষার কোন কেন্দ্র। <br><br>এমনি পরিস্থিতিতে ১৯৪২ইং সনে মোকামিয়ার এই নদী নালা ও
+নীবিড় জঙ্গলের মাঝে এদেশের মানুষকে ইসলামের পরশ পাথরের স্পর্শে নতুন মানুষ রুপে গড়ে তোলার জন্য অনেক
+ত্যাগ তিতিক্ষা স্বীকার করে প্রতিষ্ঠা করেন করুনা মোকামিয়া কবিল মাদ্রাসা, মোকামিয়া দরবার শরীফ জামে মসজিদ ও
+মেহমানখানা।</p>
+
+					</div>
+				</div>
+				
+				
+				
+				
+				
+			</div>
+			<div data-role="footer" data-tap-toggle="true" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-top" rel="external"></a></li> 
+						 <li><a onclick="window.history.back()" href="#" data-icon="back"></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

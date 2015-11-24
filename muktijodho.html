@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>বেতাগী</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	</head>
+	<body onload="onLoad()">
+	
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-tap-toggle="false" data-position="fixed" 
+			style="text-align:center;">
+			<a href="index.html" class="ui-btn ui-icon-grid ui-btn-icon-left ui-btn-icon-notext">Home</a>
+				<img style="margin-top:8px;" src="img/header.png"/>
+			<a href="about.html" class="ui-btn ui-icon-info ui-btn-icon-left ui-btn-icon-notext">Information</a>	
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<div class="ui-bar ui-bar-b" style="text-align:center;">
+					<p>মুক্তিযুদ্ধ</p>
+				</div>
+
+				
+				<div class="ui-corner-all custom-corners">
+					<div class="ui-bar ui-bar-a">
+						<h3>মুক্তিযোদ্ধাদের তালিকা</h3>
+				  	</div>
+				  	<div class="ui-body ui-body-a">
+						<p style=text-align:left;> মোঃ মতিউর রহমান<br><br>
+						মোঃ ইউনুছ আলী<br> পিতাঃ মৃতঃ হাতেম আলী জোমাদ্দার <br><br>
+						মোঃ মজনু হাওলাদার<br> পিতাঃ মৃতঃ পবন আলী হাং <br><br>
+						মোঃ আবদুল মালেক<br> পিতাঃ মৃতঃ মৌঃ সামসুদ্দিন  আহম্মেদ<br><br>
+						আঃ হালিম ফরাজী<br>পিতাঃ মৃতঃ রুস্তুম আলী ফরাজী <br><br>
+						আঃ রাজ্জাক খান<br> পিতাঃ মৃতঃ আঃ মজিদ খান<br><br>
+						আঃ রব হাং <br> পিতাঃ মৃতঃ রহম আলী খান <br><br>
+						আলেয়া বেগম<br>স্বামীঃ মৃতঃ মোঃ ইউসুফ আলী<br><br>
+						নুরুন নাহার<br> স্বামীঃ মৃতঃ মোঃ কবির <br><br>
+						আবুল কাশেম <br> পিতাঃ  মৃতঃ আছমত আলী হাং <br><br>
+						আঃ ওয়াজেদ হাং<br> পিতাঃ  মৃতঃ আঃ গফুর হাং <br><br>
+						আলী আহম্মদ হাং<br> পিতাঃ  মৃতঃ মোচন উদ্দিন হাং <br><br>
+						আনোয়ারা বেগম<br>স্বামীঃ মৃতঃ সৈয়দ আলী<br><br> 
+						মোঃ সামসুল হক<br> পিতাঃ মৃতঃ নুর হামেদ সিকদার<br><br>
+						অধ্যাপক হুমায়ুন কবির হিরু<br> পিতাঃ মৃতঃ সাহাবুদ্দিন সিকদার <br><br>
+						রেজাউল করিম ফারুক<br> পিতাঃ মৃতঃ সাহাবুদ্দিন সিকদার <br><br>
+						মোঃ খায়রুল আলম<br> পিতাঃ মৃতঃ সাহাবুদ্দিন সিকদার <br><br>
+						কহিনুর বেগম<br>স্বামীঃ মৃতঃ এম<br> এ<br> মান্নান মিয়া <br><br>
+						মোঃ আঃ হাকিম<br> পিতাঃ মৃতঃ কাছেম আলী হাং <br><br>
+						রহিমা বেগম<br> স্বামীঃ মৃতঃ আঃ মজিদ মাঝি <br><br>
+						গোলাম সরোয়ার বাদল<br>পিতাঃ মৃতঃ আঃ রশিদ সিকদার <br><br>
+						আঃ মন্নান মাঝি<br>পিতাঃ মৃতঃ মফেজ উদ্দিন মাঝি <br><br>
+						মোশারেফ হোসেন<br>পিতাঃ মৃতঃ গয়জউদ্দিন হাওলাদার <br><br>
+						শরীফ আলাউদ্দিন খান দুলাল<br>পিতাঃ মৃতঃ শরীফ আমির আলী খান <br><br>
+						সালেহা বেগম<br>স্বামীঃ মৃতঃ আঃ ছত্তার খলিফা <br><br>
+						মঞ্জুরুন নেছা<br>স্বামীঃ মৃতঃ নুরুল ইসলাম মৃধা <br><br>
+						মোঃ আমজেদ হোসেন সিং<br>পিতাঃ মৃতঃ পবন আল সিং <br><br>
+						মমতাজ বেগম<br>স্বামীঃ মৃতঃ আঃ হাকিম হাং
+</p>
+						
+				 	</div>
+				</div>
+				
+				
+			</div>
+			<div data-role="footer" data-tap-toggle="true" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-top" rel="external"></a></li> 
+						 <li><a onclick="window.history.back()" href="#" data-icon="back"></a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
